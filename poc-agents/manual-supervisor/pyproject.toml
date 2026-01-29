@@ -1,0 +1,14 @@
+[project]
+name = "manual-supervisor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.2.7",
+    "langchain-anthropic>=1.3.1",
+    "langchain-openai>=1.1.7",
+    "langgraph>=1.0.7",
+    "langsmith>=0.6.5",
+    "python-dotenv>=1.2.1",
+]
