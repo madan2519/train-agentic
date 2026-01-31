@@ -42,10 +42,16 @@ def latest_exchange_rates(base: str = "USD", symbols: Optional[str] = None) -> s
         data = resp.json()
         
         # If rates are empty, tell the agent why
+        print(data)
         if not data.get("rates"):
             return f"No rates found for base '{clean_base}'. Ensure symbols are correct (e.g., 'INR')."
             
-        return json.dumps(data)
+        rates = data.get("rates", {})
+        return json.dumps({
+            "base": clean_base,
+            "rates": rates
+        })
+
     except Exception as e:
         return f"Request failed: {e}"
 

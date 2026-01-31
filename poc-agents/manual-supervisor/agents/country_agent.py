@@ -14,6 +14,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 @tool
 def get_country_details(country: str) -> str:
     """Returns basic info about a country (dummy function)."""
+    
     return f"{country} is a country with its own government and borders."
 
 # llm = ChatAnthropic(model="claude-3-5-sonnet-20241022", api_key=anthropicapi_key)
