@@ -58,7 +58,7 @@ def latest_exchange_rates(base: str = "USD", symbols: Optional[str] = None) -> d
 #     print("MCP Currency Server started. Waiting for clients...")
 #     mcp.run()
 
-# ---------------------------------------------------------------------------
+# -------------------------------------------------------------------
 # To run with HTTP transport
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":

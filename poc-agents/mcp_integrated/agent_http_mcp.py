@@ -21,6 +21,8 @@ client = MultiServerMCPClient({
 # Discover tools exposed by the MCP server
 tools = asyncio.run(client.get_tools())
 
+print("Available tools:", [tool.name for tool in tools])
+
 # -------------------------------------------------------------------
 # 2. Initialize LLM
 # -------------------------------------------------------------------

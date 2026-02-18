@@ -6,7 +6,7 @@ from agent_http_mcp import agent as http_agent
 async def main():
     # --- Example 1: Using the MCP agent (local process) ---
     # result = await agent.ainvoke(
-    #     {"input": "What is the current exchange rate from USD to EUR?"}
+    #     {"input": "What is the current exchange rate from USD to INR?"}
     # )
 
     # --- Example 2: Using the HTTP MCP agent ---

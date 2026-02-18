@@ -18,6 +18,8 @@ client = MultiServerMCPClient({
 # Get tools from all connected servers
 tools = asyncio.run(client.get_tools())
 
+print("Available tools:", [tool.name for tool in tools])
+
 
 # LLM
 llm = ChatOpenAI(
